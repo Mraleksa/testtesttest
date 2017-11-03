@@ -47,7 +47,7 @@ function run(db) {
 			 { decodeEntities: false });
 
 		//var elements = $("div.media-body span.p-name").each(function () {
-			var value = $("#0idd386").text();
+			var value = $("#0idd386").html();
 			updateRow(db, value);
 		//});
 
