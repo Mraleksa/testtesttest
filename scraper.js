@@ -11,9 +11,7 @@ db.serialize(function() {
 db.close();
 
 
-db.each("DELETE*from data", function(err, timeStart) {
-	console.log('!')
-})
+
 /*
 function initDatabase(callback) {
 	// Set up sqlite database.
