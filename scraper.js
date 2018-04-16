@@ -5,6 +5,12 @@ var request = require("request");
 var sqlite3 = require("sqlite3").verbose();
 var db = new sqlite3.Database("data.sqlite");
 
+db.serialize(function() {
+    db.run("DELETE*from data");
+})
+db.close();
+
+
 db.each("DELETE*from data", function(err, timeStart) {
 	console.log('!')
 })
